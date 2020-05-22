@@ -1,0 +1,25 @@
+.pergunta {
+    margin: 0px 0px 45px 0px;
+}
+
+.example-full-width {
+    width: 50%;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+input {
+    width: 500px
+}
+
+.tex {
+    background-color: rgb(236, 236, 236);
+}
+
+i {
+    padding: 0px 5px 4px 0px;
+}

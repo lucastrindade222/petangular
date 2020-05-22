@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.divazul {
+    color: teal;
+}
+
+.a {
+    background-color: #EEE8AA;
+}
+
+.b {
+    font-size: 32px;
+    font-family: "A Gentle Touch";
+    color: #827717;
+}

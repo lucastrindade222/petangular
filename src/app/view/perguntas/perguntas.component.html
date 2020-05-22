@@ -1,0 +1,65 @@
+<mat-card class="pergunta mat-elevation-z3">
+
+    <mat-card-title fxLayoutAlign="center center" class="title">
+
+
+        Fale conosco!!
+
+    </mat-card-title>
+
+
+    <mat-card-subtitle fxLayoutAlign="center center" class="subtitle">
+
+
+        Prencha o campo a baixo para mandar sua pergunta ou susgestão
+
+    </mat-card-subtitle>
+
+</mat-card>
+
+
+<div fxLayoutAlign="center center" fxFlexFill>
+
+
+    <mat-card fxFlex="100">
+        <form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
+            <br><br> <br><br>
+            <mat-form-field class="example-full-width">
+                <mat-label>Informe um email de contato</mat-label>
+                <input fxLayoutAlign="center center" type="email" name="email" ngModel matInput placeholder="Email">
+            </mat-form-field>
+
+            <br><br> <br><br>
+            <mat-form-field class="example-full-width">
+                <mat-label>Tema</mat-label>
+                <input fxLayoutAlign="center center" name="Tema" ngModel matInput placeholder="Tema">
+            </mat-form-field>
+
+            <br><br> <br><br>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Texto</label>
+                <textarea class="tex" ngModel matInput placeholder="Texto" name="texto" rows="3"></textarea>
+            </div>
+
+            <br>
+            <div fxLayoutAlign="center center"> <button mat-raised-button type="submit" color="primary"><i class="material-icons">email</i>Enviar</button></div>
+
+
+            <br><br>
+
+        </form>
+
+    </mat-card>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>

@@ -1,0 +1,36 @@
+<div fxLayoutAlign="center center" fxFlexFill>
+
+    <mat-card class="card " fxFlex="50">
+
+        <mat-toolbar class="b" fxLayoutAlign="center center">Login</mat-toolbar>
+        <br><br>
+
+
+        <form fxLayout="column" fxLayoutAlign="stretch" class="login-form" [formGroup]="formGroup" (ngSubmit)="loginproces()">
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Email</mat-label>
+                <input matInput formControlName="email">
+            </mat-form-field>
+
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Senha</mat-label>
+                <input type="password" matInput formControlName="senha">
+            </mat-form-field>
+
+            <br>
+            <button mat-raised-button type="submit" color="primary">Entrar</button>
+            <br><br>
+            <a fxLayoutAlign="center center" routerLink="/cadastro">você não possui conta?</a>
+        </form>
+
+
+
+    </mat-card>
+
+
+
+
+
+</div>

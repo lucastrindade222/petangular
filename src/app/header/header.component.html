@@ -1,0 +1,40 @@
+<mat-toolbar class="header mat-elevation-z4 ">
+
+
+
+
+
+
+
+
+    <div class="pagina" routerLink="/">PetCenter <i class="material-icons">pets</i></div>
+
+    <div>
+
+
+        <button mat-button routerLink="/"><i class="material-icons">home</i>Home</button>
+
+
+        <button mat-button routerLink="/perguntas"><i class="material-icons">forum</i>Fale conosco</button>
+
+        <button mat-button [matMenuTriggerFor]="belowMenu"><i class="material-icons">store</i>Serviços</button>
+        <mat-menu #belowMenu="matMenu" yPosition="below">
+
+            <button routerLink="/produto" mat-menu-item><i class="material-icons">shopping_basket</i>Produtos</button>
+            <button routerLink="/atendimento" mat-menu-item><i class="material-icons">
+                local_hospital</i>Antendimento</button>
+        </mat-menu>
+
+        <button mat-button routerLink="/sobre"><i class="material-icons">favorite_border</i>Sobre</button>
+
+
+    </div>
+
+    <div class="pagina">
+        <i routerLink="/carrinho" class="material-icons">local_grocery_store</i>
+        <i routerLink="/login" class="material-icons">account_circle</i></div>
+
+
+
+
+</mat-toolbar>

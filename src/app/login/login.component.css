@@ -1,0 +1,11 @@
+.footer {
+    color: white;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    padding: 90px 10px 70px 10px;
+}

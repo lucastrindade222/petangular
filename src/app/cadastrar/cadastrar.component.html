@@ -1,0 +1,98 @@
+<div fxLayoutAlign="center center" fxFlexFill>
+
+
+    <mat-card fxFlex="70">
+
+        <form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
+            <br><br> <br><br>
+
+            <mat-toolbar class="b" fxLayoutAlign="center center">Cadastro</mat-toolbar>
+            <br><br>
+            <br><br>
+            <mat-form-field class="example-full-width">
+                <mat-label>Nome</mat-label>
+                <input fxLayoutAlign="center center" name="nome" ngModel matInput placeholder="Nome">
+            </mat-form-field>
+
+            <br><br>
+            <mat-form-field class="example-full-width ">
+                <mat-label>cpf</mat-label>
+                <input fxLayoutAlign="center center" ngModel name="cpf" matInput placeholder="cpf">
+            </mat-form-field>
+
+
+
+            <br><br>
+            <mat-form-field class="example-full-width">
+                <mat-label>email</mat-label>
+                <input fxLayoutAlign="center center" matInput ngModel name="email" placeholder="email">
+            </mat-form-field>
+
+
+
+            <br><br>
+            <mat-form-field class="example-full-width">
+                <mat-label>senha</mat-label>
+                <input type="password" fxLayoutAlign="center center" ngModel matInput name="senha" placeholder="senha">
+            </mat-form-field>
+
+            <br>
+
+            <div fxLayoutAlign="center center"> <button mat-raised-button type="submit" color="primary"><i class="material-icons">save</i>Salvar</button></div>
+            <br><br>
+
+        </form>
+        <mat-toolbar class="b" fxLayoutAlign="center center">Endereço</mat-toolbar>
+        <br><br>
+        <mat-form-field class="example-full-width ">
+            <mat-label>numero</mat-label>
+            <input fxLayoutAlign="center center" matInput placeholder="numero">
+        </mat-form-field>
+        <br><br>
+        <mat-form-field class="example-full-width">
+            <mat-label>rua</mat-label>
+            <input fxLayoutAlign="center center" matInput placeholder="rua">
+        </mat-form-field>
+
+        <br><br>
+        <mat-form-field class="example-full-width ">
+            <mat-label>bairro</mat-label>
+            <input fxLayoutAlign="center center " matInput placeholder="bairro ">
+        </mat-form-field>
+
+
+        <br><br>
+        <mat-form-field class="example-full-width ">
+            <mat-label>cidade</mat-label>
+            <input fxLayoutAlign="center center " matInput placeholder="cidade ">
+        </mat-form-field>
+
+        <br><br>
+        <mat-form-field class="example-full-width ">
+            <mat-label>uf</mat-label>
+            <input fxLayoutAlign="center center " matInput placeholder="uf ">
+        </mat-form-field>
+
+
+        <br><br>
+        <mat-form-field class="example-full-width ">
+            <mat-label>cep</mat-label>
+            <input fxLayoutAlign="center center " matInput placeholder="cep ">
+        </mat-form-field>
+
+        <br><br>
+        <mat-form-field class="example-full-width ">
+            <mat-label>complemento</mat-label>
+            <input fxLayoutAlign="center center " matInput placeholder="complemento ">
+        </mat-form-field>
+
+
+
+
+
+
+    </mat-card>
+
+
+
+</div>

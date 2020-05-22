@@ -1,0 +1,9 @@
+.footer {
+    background-color: rgba(214, 213, 210, 0.363);
+    margin: 15px 0px 0px 0px;
+    color: #827717;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+}
