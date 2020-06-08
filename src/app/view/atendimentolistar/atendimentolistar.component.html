@@ -1,0 +1,69 @@
+<div class="card">
+
+    <div class="card-header">
+
+        <div class="float-left">
+            <h4>Historico de atendimentos</h4>
+        </div>
+
+
+
+    </div>
+
+
+    <div class="card-bady">
+
+
+        <table class="table table-hover">
+
+            <thead>
+                <tr>
+                    <th>id consulta</th>
+                    <th>Data do atendimento</th>
+
+                    <th>Data do cadastro da consulta</th>
+                    <th>Tipo de Serviço</th>
+
+                    <th>id do animal</th>
+                    <th>id do cliente</th>
+
+
+
+                </tr>
+
+
+            </thead>
+            <tbody>
+                <tr *ngFor="let lista of lista  ">
+
+
+                    <td>{{lista.id_consuta}}</td>
+
+                    <td>{{lista.data_consulta}}</td>
+
+
+
+                    <td>{{lista.hoje}}</td>
+
+                    <td>{{lista.servicos}}</td>
+
+                    <td>{{lista.animal}}</td>
+
+
+
+
+
+
+                </tr>
+
+            </tbody>
+
+
+        </table>
+
+    </div>
+
+
+
+
+</div>

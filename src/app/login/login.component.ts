@@ -21,9 +21,12 @@ export class LoginComponent implements OnInit {
     this.initform();
   }
 initform(){
+
   this.formGroup = new FormGroup({
+
+
     email : new FormControl('',[Validators.required,Validators.email]),
-    senha : new FormControl('',[Validators.required,Validators.nullValidator])
+    senha : new FormControl('',[Validators.required])
     
  
   
@@ -33,16 +36,22 @@ initform(){
 }
 loginproces(){
 
-
+ 
 
 console.log("test")
   if(this.formGroup.value){
+
+    
+ 
+
+
 this.autenticarserviso.lagin(this.formGroup.value).subscribe(result =>{
 
  if(result.success){
-  console.log(result);
+  console.log(result.header.get('Authorization'));
   alert(result.message);
  }else{
+  console.log("test"); 
   alert(result.message);
  }
 

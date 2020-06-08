@@ -30,6 +30,16 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {TextFieldModule} from '@angular/cdk/text-field';
 import { AtendimentoComponent } from './view/atendimento/atendimento.component';
 import { SobreComponent } from './view/sobre/sobre.component';
+import { CadastroprodutosComponent } from './view/cadastroprodutos/cadastroprodutos.component';
+import { CadastrarPSComponent } from './view/cadastrar-ps/cadastrar-ps.component';
+import { CadasservicosComponent } from './view/cadasservicos/cadasservicos.component';
+import { CadastroanimalComponent } from './view/cadastroanimal/cadastroanimal.component';
+import { ListarAnimalComponent } from './view/listar-animal/listar-animal.component';
+import { ListarservicoComponent } from './view/listarservico/listarservico.component';
+import { ListarClientesComponent } from './view/listar-clientes/listar-clientes.component';
+import { ClientesComponent } from './view/clientes/clientes.component';
+import { AtendimentolistarComponent } from './view/atendimentolistar/atendimentolistar.component';
+ 
 
 
 @NgModule({
@@ -46,7 +56,17 @@ import { SobreComponent } from './view/sobre/sobre.component';
     CarrinhoComponent,
     PerguntasComponent,
     AtendimentoComponent,
-    SobreComponent
+    SobreComponent,
+    CadastroprodutosComponent,
+    CadastrarPSComponent,
+    CadasservicosComponent,
+    CadastroanimalComponent,
+    ListarAnimalComponent,
+    ListarservicoComponent,
+    ListarClientesComponent,
+    ClientesComponent,
+    AtendimentolistarComponent,
+    
   ],
   imports: [
     BrowserModule,

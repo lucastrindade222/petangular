@@ -1,1 +1,49 @@
-<p>atendimento ok!</p>
+<div fxLayoutAlign="center center" fxFlexFill>
+
+
+    <mat-card fxFlex="70">
+        <form #userPost="ngForm" (ngSubmit)="onSubmit()">
+            <br><br> <br><br>
+
+            <mat-toolbar class="b" fxLayoutAlign="center center">Cadastro Atendimento </mat-toolbar>
+            <br><br>
+            <br><br>
+            <br><br>
+
+
+            <mat-form-field class="example-full-width ">
+                <mat-label>Id do animal</mat-label>
+                <input fxLayoutAlign="center center" type="number" id="idanimal" matInput placeholder="Idade">
+            </mat-form-field>
+
+            <br><br>
+            <mat-form-field class="example-full-width ">
+                <mat-label>Id do serviço</mat-label>
+                <input fxLayoutAlign="center center" type="number" id="idservico" matInput placeholder="pelagem">
+            </mat-form-field>
+
+            <br><br>
+            <mat-form-field class="example-full-width ">
+                <mat-label>Data do atendimento</mat-label>
+                <input fxLayoutAlign="center center" type="date" id="data" matInput placeholder="pesso">
+            </mat-form-field>
+
+
+
+
+            <br><br>
+            <div fxLayoutAlign="center center">
+
+                <button routerLink="/cadastrarps" mat-raised-button color="primary"><i class="material-icons">clear</i>Cancelar</button>
+
+                <button mat-raised-button type="submit" color="primary"> <i class="material-icons">save</i>Salvar</button>
+
+
+                <button routerLink="/atendimentolistar" mat-raised-button color="primary"><i class="material-icons">library_books</i>Historico de Consulta</button>
+
+            </div>
+
+        </form>
+
+    </mat-card>
+</div>

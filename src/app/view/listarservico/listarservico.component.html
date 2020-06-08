@@ -1,0 +1,53 @@
+<div class="card">
+
+    <div class="card-header">
+
+        <div class="float-left">
+            <h4>Lista de serviços</h4>
+        </div>
+
+        <div class="float-right">
+
+
+            <button type="button" class="btn btn-primary" [routerLink]>Voltar</button>
+
+        </div>
+
+    </div>
+
+
+    <div class="card-bady">
+
+
+        <table class="table table-hover">
+
+            <thead>
+                <tr>
+                    <th>serviços</th>
+                    <th>Valor</th>
+                    <th></th>
+                </tr>
+
+
+            </thead>
+            <tbody>
+                <tr *ngFor="let lista of lista ">
+
+
+                    <td>{{lista.descri_S}}</td>
+
+                    <td>R$:{{lista.valor}}</td>
+                    <td></td>
+                </tr>
+
+            </tbody>
+
+
+        </table>
+
+    </div>
+
+
+
+
+</div>
