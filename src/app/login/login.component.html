@@ -6,17 +6,17 @@
         <br><br>
 
 
-        <form fxLayout="column" fxLayoutAlign="stretch" class="login-form" [formGroup]="formGroup" (ngSubmit)="loginproces()">
+        <form fxLayout="column" fxLayoutAlign="stretch" class="login-form" (ngSubmit)="loginproces()">
 
             <mat-form-field class="example-full-width">
                 <mat-label>Email</mat-label>
-                <input matInput formControlName="email">
+                <input matInput id="email">
             </mat-form-field>
 
 
             <mat-form-field class="example-full-width">
                 <mat-label>Senha</mat-label>
-                <input type="password" matInput formControlName="senha">
+                <input type="password" matInput id="senha">
             </mat-form-field>
 
             <br>

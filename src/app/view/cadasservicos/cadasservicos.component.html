@@ -3,7 +3,7 @@
 
     <mat-card fxFlex="70">
 
-        <form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
+        <form #userPost="ngForm" (ngSubmit)="onSubmit()">
             <br><br> <br><br>
 
             <mat-toolbar class="b" fxLayoutAlign="center center">Cadastro Serviços </mat-toolbar>
@@ -11,16 +11,20 @@
             <br><br>
             <mat-form-field class="example-full-width">
                 <mat-label>Descrição</mat-label>
-                <input fxLayoutAlign="center center" name="descricao" ngModel matInput placeholder="Descrição do serviços">
+                <input fxLayoutAlign="center center" id="descricao" ngModel matInput placeholder="Descrição do serviços">
             </mat-form-field>
 
             <br><br>
             <mat-form-field class="example-full-width ">
                 <mat-label>Valor</mat-label>
-                <input fxLayoutAlign="center center" ngModel name="valor" matInput placeholder="Valor">
+                <input fxLayoutAlign="center center" ngModel id="valor" matInput placeholder="Valor">
             </mat-form-field>
 
-            <input type="file" (change)="inputfoto($event)" name="foto" id="foto">
+            <div class="custom-file">
+                <input type="file" (change)="onChange($event)" class="custom-file-input" id="customFile">
+                <label class="custom-file-label" for="customFile" id="fil">Choose file</label>
+            </div>
+
 
             <br><br>
             <div fxLayoutAlign="center center"> <button mat-raised-button type="submit" color="primary"><i class="material-icons">save</i>Salvar</button></div>

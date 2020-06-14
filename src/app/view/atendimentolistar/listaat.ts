@@ -1,4 +1,5 @@
 import { baseUrl } from './../../../environments/environment';
+import { hrtime } from 'process';
 export interface Ate{
 
  
@@ -6,7 +7,7 @@ export interface Ate{
 	id_consuta:number,
 	data_consulta:String,
 	hoje:String,
- 	   servicos: {
+	servicos:{
 		id_servico:number
 	}
 
@@ -17,6 +18,8 @@ export interface Ate{
 		}
 	}
  
+ 
+
 }
 
  

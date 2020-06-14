@@ -9,7 +9,7 @@ import{FormGroup, Validators,FormControl}from'@angular/forms'
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  formGroup:FormGroup;
+  
   constructor(private autenticarserviso:AutenticarservisoService) { }
 
 
@@ -18,41 +18,71 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   
     
-    this.initform();
+     
   }
-initform(){
-
-  this.formGroup = new FormGroup({
-
-
-    email : new FormControl('',[Validators.required,Validators.email]),
-    senha : new FormControl('',[Validators.required])
-    
  
+
+
+public getAcassoToken(){
+
+
+  let email:String=(<HTMLInputElement>document.getElementById("email")).value;
+  let senha:String=(<HTMLInputElement>document.getElementById("senha")).value;
+
+  let data ={email,senha}
   
-    
-  
-  })
+console.log(data)
+
+
+let ref= this.autenticarserviso.geradorToken(data);
+ref.subscribe(result=>console.log("Token:"+result));
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 loginproces(){
 
+  let email:String=(<HTMLInputElement>document.getElementById("email")).value;
+  let senha:String=(<HTMLInputElement>document.getElementById("senha")).value;
+
+  let data ={email,senha}
  
 
 console.log("test")
-  if(this.formGroup.value){
+  if( data){
 
     
  
 
 
-this.autenticarserviso.lagin(this.formGroup.value).subscribe(result =>{
-
- if(result.success){
-  console.log(result.header.get('Authorization'));
-  alert(result.message);
+  let data ={email,senha}
+  this.autenticarserviso.lagin(data).subscribe(response =>{
+console.log(response.header.get('Authorization'))
+ if(response.success){
+  console.log(response.header.get('Authorization'));
+  alert(response.message);
  }else{
-  console.log("test"); 
-  alert(result.message);
+  
+  alert(response.message);
  }
 
 })

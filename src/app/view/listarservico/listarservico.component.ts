@@ -9,12 +9,24 @@ import { Ser } from './listser';
 })
 export class ListarservicoComponent implements OnInit {
     lista : Ser[];
+
+    l: Ser;
   constructor(private service:ServicosService) { }
 
   ngOnInit(): void {
 
-    this.service.list().subscribe(dados => this.lista = dados);
+    this.service.list().subscribe(dados =>{
+      this.lista = dados
+
+    
+       
+     
+
+    });
 
   }
+
+
+  
 
 }
