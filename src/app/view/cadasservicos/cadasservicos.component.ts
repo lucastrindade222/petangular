@@ -61,6 +61,7 @@ console.log("oi teste da foto" +this.selectedFile.name)
       }
     }
     );
+    alert("serviço salvo.")
 }
 
 

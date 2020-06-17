@@ -1,3 +1,4 @@
+import { ListarprodutosComponent } from './view/listarprodutos/listarprodutos.component';
 import { AtendimentolistarComponent } from './view/atendimentolistar/atendimentolistar.component';
 import { ClientesComponent } from './view/clientes/clientes.component';
 import { ListarservicoComponent } from './view/listarservico/listarservico.component';
@@ -7,7 +8,7 @@ import { AtendimentoComponent } from './view/atendimento/atendimento.component';
 import { SobreComponent } from './view/sobre/sobre.component';
 import { CarrinhoComponent } from './view/carrinho/carrinho.component';
 import { PerguntasComponent } from './view/perguntas/perguntas.component';
-import { ProdutosComponent } from './home/view/produtos/produtos.component';
+ 
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -35,10 +36,7 @@ component:LoginComponent
   path:'',
   component:HomeComponent
 },
-{
-  path:'produto',
-  component:ProdutosComponent
-},
+ 
 {
   path:'perguntas',
   component:PerguntasComponent
@@ -78,6 +76,9 @@ component:CadasservicosComponent
 {
   path:'listarAnimal',
   component:ListarAnimalComponent
+},{
+path:'listarProduto',
+component:ListarprodutosComponent
 },
 {
   path:"listarservico",

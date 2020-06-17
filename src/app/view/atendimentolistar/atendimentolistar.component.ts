@@ -44,6 +44,9 @@ export class AtendimentolistarComponent implements OnInit {
       this.lista = dados;
       for(let i in this.lista){
         let bairro=(<HTMLInputElement>document.getElementById('tabela')).innerHTML+="<tr><td>"+this.lista[i].id_consuta+"</td> <td>"+this.lista[i].data_consulta+"</td><td>"+this.lista[i].hoje+"</td><td>"+this.lista[i].servicos.id_servico+"</td><td>"+this.lista[i].animal.id_animal+"</td><td>"+this.lista[i].animal.pessoa.id_pessoa+"</td></tr>"
+    
+    
+    
       }
       
      });

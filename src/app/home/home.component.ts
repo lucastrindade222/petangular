@@ -12,6 +12,6 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  images = [2, 1, 2].map((n) => `https://projetopet2020-051.s3-sa-east-1.amazonaws.com/produto/produto${n}.jpg`);
+  images = [1, 2, 3].map((n) => `https://projetopet2020-051.s3-sa-east-1.amazonaws.com/servicos/servicos${n}.jpg`);
 
 }

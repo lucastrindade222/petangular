@@ -43,7 +43,7 @@ export class AtendimentoComponent implements OnInit {
       console.warn('resultado:',resultado)
 })
 
-
+alert("Atendimento agendado")
     }
 
   ngOnInit(): void {

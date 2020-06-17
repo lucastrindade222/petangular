@@ -63,6 +63,9 @@ console.log("oi teste da foto" +this.selectedFile.name)
       }
     }
     );
+
+alert("Produto foi salvo")
+
 }
 
 

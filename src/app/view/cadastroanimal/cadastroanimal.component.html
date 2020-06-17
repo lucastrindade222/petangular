@@ -3,7 +3,7 @@
 
     <mat-card fxFlex="70">
 
-        <form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
+        <form #userPost="ngForm" (ngSubmit)="onSubmit()">
             <br><br> <br><br>
 
             <mat-toolbar class="b" fxLayoutAlign="center center">Cadastro Animal </mat-toolbar>
@@ -11,37 +11,37 @@
             <br><br>
             <mat-form-field class="example-full-width">
                 <mat-label>Nome</mat-label>
-                <input fxLayoutAlign="center center" name="Nome" ngModel matInput placeholder=" Nome do Animal">
+                <input fxLayoutAlign="center center" id="Nome" matInput placeholder=" Nome do Animal">
             </mat-form-field>
 
             <br><br>
             <mat-form-field class="example-full-width ">
                 <mat-label>Idade</mat-label>
-                <input fxLayoutAlign="center center" ngModel name="Idade" matInput placeholder="Idade">
+                <input fxLayoutAlign="center center" id="Idade" matInput placeholder="Idade">
             </mat-form-field>
 
             <br><br>
             <mat-form-field class="example-full-width ">
                 <mat-label>pelagem</mat-label>
-                <input fxLayoutAlign="center center" ngModel name="pelagem" matInput placeholder="pelagem">
+                <input fxLayoutAlign="center center" id="pelagem" matInput placeholder="pelagem">
             </mat-form-field>
 
             <br><br>
             <mat-form-field class="example-full-width ">
                 <mat-label>pesso</mat-label>
-                <input fxLayoutAlign="center center" ngModel name="pesso" matInput placeholder="pesso">
+                <input fxLayoutAlign="center center" id="pesso" matInput placeholder="pesso">
             </mat-form-field>
 
             <br><br>
             <mat-form-field class="example-full-width ">
                 <mat-label>Raça</mat-label>
-                <input fxLayoutAlign="center center" ngModel name="raca" matInput placeholder="Raça">
+                <input fxLayoutAlign="center center" id="raca" matInput placeholder="Raça">
             </mat-form-field>
 
             <br><br>
             <mat-form-field class="example-full-width ">
                 <mat-label>Tamanho</mat-label>
-                <input fxLayoutAlign="center center" ngModel name="tamanho" matInput placeholder="Tamanho">
+                <input fxLayoutAlign="center center" id="tamanho" matInput placeholder="Tamanho">
             </mat-form-field>
             <br><br>
             <div fxLayoutAlign="center center"> <button mat-raised-button type="submit" color="primary"><i class="material-icons">save</i>Salvar</button></div>

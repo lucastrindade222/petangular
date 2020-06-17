@@ -9,24 +9,31 @@ import { Ser } from './listser';
 })
 export class ListarservicoComponent implements OnInit {
     lista : Ser[];
-
-    l: Ser;
+    servico: Ser[]
+    l : Ser
+    valor;
   constructor(private service:ServicosService) { }
 
   ngOnInit(): void {
 
     this.service.list().subscribe(dados =>{
-      this.lista = dados
-
-    
-       
+      this.lista = dados;
      
-
+     
     });
 
   }
 
+  onsubmit(){
 
+  }
   
+
+
+
+
+
+
+
 
 }

@@ -1,1 +1,54 @@
-<p>carrinho works!</p>
+<div class="card">
+
+    <div class="card-header">
+
+        <div class="float-left">
+            <h2>Clique no produto que você deseja pagar.</h2>
+            <h4>o produto ira sair do carrinho quando o pagamento for efetuado </h4>
+        </div>
+    </div>
+
+
+    <div class="card-bady">
+
+
+        <table id="minhaTabela" class="table table-hover">
+
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Quantidate</th>
+                    <th>Valor</th>
+                    <th></th>
+
+                </tr>
+
+
+            </thead>
+
+            <tbody>
+
+                <tr *ngFor="let lista of lista;let i =index " (click)="onsubmit($event,lista,i)">
+
+
+                    <td><img src="https://projetopet2020-051.s3-sa-east-1.amazonaws.com/produto/{{lista.produtos.nomefoto}}" alt="thumbnail" class="img-thumbnail" style="width: 200px"></td>
+                    <td>{{lista.quantidade}}</td>
+
+                    <td>R$:{{lista.total_venda}}</td>
+                    <td><i class="material-icons">print</i></td>
+
+
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <br>
+    <div fxLayoutAlign="center center"> <button mat-raised-button color="primary"> Voltar </button></div>
+    <br><br>
+
+</div>

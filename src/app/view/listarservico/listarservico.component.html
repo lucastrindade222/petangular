@@ -11,10 +11,11 @@
     <div class="card-bady">
 
 
-        <table class="table table-hover">
+        <table id="minhaTabela" class="table table-hover">
 
             <thead>
                 <tr>
+                    <th></th>
                     <th>serviços</th>
                     <th>Valor</th>
                     <th></th>
@@ -25,15 +26,14 @@
 
             <tbody>
 
-                <tr *ngFor="let lista of lista ">
+                <tr *ngFor="let lista of lista;let i =index ">
 
 
-
+                    <td><img src="https://projetopet2020-051.s3-sa-east-1.amazonaws.com/servicos/{{lista.nomefoto}}" alt="thumbnail" class="img-thumbnail" style="width: 200px"></td>
                     <td>{{lista.descri_S}}</td>
 
                     <td>R$:{{lista.valor}}</td>
-                    <td> <button type="button" onclick="onSubmit(lista.descri_S,lista.valor)" class="btn btn-primary">Voltar</button>
-                    </td>
+
 
                 </tr>
 

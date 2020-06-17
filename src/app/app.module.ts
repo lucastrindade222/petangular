@@ -1,3 +1,4 @@
+ 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -20,7 +21,7 @@ import { NavComponent } from './home/nav/nav.component';
 import { FooterComponent } from './home/footer/footer.component';
 import {MatMenuModule} from '@angular/material/menu'
 import {MatIconModule} from '@angular/material/icon';
-import { ProdutosComponent } from './home/view/produtos/produtos.component';
+ 
 import { HeaderComponent } from './header/header.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
  import {MatListModule} from '@angular/material/list';
@@ -39,6 +40,7 @@ import { ListarservicoComponent } from './view/listarservico/listarservico.compo
 import { ListarClientesComponent } from './view/listar-clientes/listar-clientes.component';
 import { ClientesComponent } from './view/clientes/clientes.component';
 import { AtendimentolistarComponent } from './view/atendimentolistar/atendimentolistar.component';
+import { ListarprodutosComponent } from './view/listarprodutos/listarprodutos.component';
  
 
 
@@ -51,7 +53,7 @@ import { AtendimentolistarComponent } from './view/atendimentolistar/atendimento
     HomeComponent,
     NavComponent,
     FooterComponent,
-    ProdutosComponent,
+ 
     HeaderComponent,
     CarrinhoComponent,
     PerguntasComponent,
@@ -66,6 +68,7 @@ import { AtendimentolistarComponent } from './view/atendimentolistar/atendimento
     ListarClientesComponent,
     ClientesComponent,
     AtendimentolistarComponent,
+    ListarprodutosComponent,
     
   ],
   imports: [
@@ -88,7 +91,7 @@ import { AtendimentolistarComponent } from './view/atendimentolistar/atendimento
     MatListModule,
     NgbModule,
     TextFieldModule
-   
+ 
   
   ],
   providers: [],
